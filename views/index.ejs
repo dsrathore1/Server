@@ -1,0 +1,36 @@
+<%- include('../Partials/header.ejs')%>
+<%- include('../Partials/navigation.ejs') %>
+<h1>Welcome to the <%= name %> </h1>
+
+<h2>If Else Condition</h2>
+
+<!-- conditional -->
+<% if(num == 12) {%>
+This is <%= num %>
+<% }else{%>
+The number is <%= num %>
+<% } %><br>
+
+<h2>For Loop</h2>
+
+<!-- For Loop -->
+<% for(var i = 0; i<=4; i++) {%>
+<%= marks[i]%>
+<% } %>
+<br>
+<h2>For in Loop</h2>
+<!-- For in Loop -->
+<% for(const key in marks){ %>
+<br>
+<%= key %>
+<%= marks[key] %>
+<% } %>
+
+<h2>While Loop</h2>
+<% let j = 0 %>
+<% while(j<=12){ %>
+<%= j++ %>
+<% } %>
+</body>
+
+</html>
